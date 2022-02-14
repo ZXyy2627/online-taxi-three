@@ -1,0 +1,27 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: provider
+
+#作为一个微服务，需要向eureka注册
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://zhangxiang:123@euk1.com:7900/eureka/
+    healthcheck:
+      enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+      #这里面有一个特殊的就是shutdown,开启后，可以远程关闭服务
+  endpoint:
+    shutdown:
+      enabled: true
+
+

@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: EurekaServer
+  security:
+    user:
+      name: zhangxiang
+      password: 123
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://euk1.com:7900/eureka/
+  instance:
+    hostname: euk1.com
+  server:
+    enable-self-preservation: false
+server:
+  port: 7900
+
