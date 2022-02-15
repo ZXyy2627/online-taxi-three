@@ -11,7 +11,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://euk1.com:7900/eureka/
+      defaultZone: http://euk2.com:7901/eureka/,http://euk3.com:7902/eureka
   instance:
     hostname: euk1.com
   server:

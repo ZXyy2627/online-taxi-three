@@ -1,5 +1,5 @@
 server:
-  port: 7901
+  port: 7902
 
 spring:
   application:
@@ -13,6 +13,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://euk1.com:7900/eureka/, http://euk3.com:7902/eureka/
+      defaultZone: http://euk1.com:7900/eureka/, http://euk2.com:7901/eureka/
   instance:
-    hostname: euk2.com
+    hostname: euk3.com
